@@ -1,0 +1,95 @@
+/* CSS */
+body {
+    background-color: #a9dfbf; /* Light green background */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ecf9ec; /* Light green container background */
+    border: 2px solid #6c9d6c; /* Darker green border */
+    border-radius: 5px;
+    box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-top: 0;
+    color: #0b512e; /* Dark green text color */
+    text-align: center;
+    text-decoration: underline;
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: large;
+    font-weight: 600px;
+    margin-bottom: 5px;
+    color: #0b512e; /* Dark green text color */
+}
+
+input[type="number"],
+select {
+    width: 95%;
+    padding: 10px;
+    border: none;
+    background: #ffffff; /* White background for input fields */
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px #6c9d6c;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #6c9d6c; /* Dark green button color */
+    border: none;
+    border-radius: 3px;
+    color: #ffffff; /* White text color */
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #478847; /* Darker green on hover */
+}
+
+select {
+    width: 100%;
+}
+
+#result {
+    font-weight: bold;
+    margin-top: 20px;
+    color: #0b512e; /* Dark green text color */
+    transition: background-color 0.5s ease;
+}
+
+#result.category-normal {
+    background-color: #a9dfbf; /* Light green background for normal category */
+    transition: background-color 0.5s ease;
+}
+
+#result.category-underweight {
+    background-color: #f1f4a4; /* Light yellow background for underweight category */
+    transition: background-color 0.5s ease;
+}
+
+#result.category-overweight,
+#result.category-obese {
+    background-color: #f8b3b3; /* Light red background for overweight and obese categories */
+    transition: background-color 0.5s ease;
+}
+
